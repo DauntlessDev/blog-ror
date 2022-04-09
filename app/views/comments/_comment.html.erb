@@ -8,5 +8,9 @@
         <strong>Comment:</strong>
         <%= comment.body %>
     </p>
+
+    <p>
+        <%= button_to "Destroy Comment", [comment.article, comment], method: :delete %>
+    </p>
 <% end %>
         
